@@ -11,6 +11,7 @@ const NotFound = lazy(() => import("./pages/not-found"));
 const Dashboard = lazy(() => import("./pages/dashboard"));
 
 function App() {
+  //This function is basically checking the logged in user
   const { user } = useAuthListener();
   return (
     <UserContext.Provider value={{ user }}>
