@@ -13,7 +13,7 @@ function Sidebar() {
   return (
     <div>
       <User username={username} fullName={fullName} userId={userId} />
-      <Suggestions />
+      <Suggestions userId={userId} />
     </div>
   );
 }
