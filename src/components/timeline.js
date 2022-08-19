@@ -1,7 +1,10 @@
 import React from "react";
+import usePhotos from "../hooks/use-photos";
 
-function timeline() {
+function Timeline() {
+  const { photos } = usePhotos();
+  console.log("PHOTOS === ", photos);
   return <div>timeline</div>;
 }
 
-export default timeline;
+export default Timeline;
