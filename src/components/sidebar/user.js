@@ -4,7 +4,7 @@ import Skeleton from "react-loading-skeleton";
 import { DEFAULT_IMAGE_PATH } from "../../constants/paths";
 
 export default function User({ fullName, username, userId }) {
-  console.log("IN user.js", fullName);
+  // console.log("IN user.js", fullName);
 
   return !username || !fullName ? (
     <Skeleton count={1} height={61} />
